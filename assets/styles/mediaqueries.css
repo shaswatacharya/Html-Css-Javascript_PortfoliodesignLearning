@@ -53,7 +53,8 @@
 
 
 @media screen and (max-width: 600px) {
-    #contact, footer{
+    #contact,
+    footer{
         height: 40vh;
     }
 
@@ -79,7 +80,7 @@
         margin: 0;
     }
 
-    .contact-info-container p, .nav-links li a{
+    .contact-info-container p, .links-nav li a{
         font-size: 1rem;
     }
 
@@ -91,7 +92,7 @@
         font-size: 1.5rem;
     }
 
-    .nav-links{
+    .links-nav{
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
