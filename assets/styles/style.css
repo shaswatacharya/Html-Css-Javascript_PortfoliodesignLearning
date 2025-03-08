@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* Default Light Mode */
 :root {
@@ -32,9 +32,9 @@
 }
 
 
-*{
+/* General reset for margins and padding */
+* {
     margin: 0;
-  
     padding: 0;
 }
 
@@ -42,18 +42,59 @@ h3 {
     color: var(--secondary-color);
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-color: var(--background-color);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-p{
+p {
     color: var(--secondary-color-2);
 }
+
+/* Custom Cursor */
+#custom-cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/pointer-svgrepo-com.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Ensures it doesn't interfere with clicks */
+    transition: opacity 0.2s ease-out, transform 0.1s ease-out;
+    z-index: 10000;
+    opacity: 1;
+}
+
+/* Hide default cursor on PC */
+@media screen and (min-width: 1025px) {
+    body {
+        cursor: none !important; /* Hide default cursor on PC */
+    }
+
+    /* Custom cursor is applied everywhere */
+    #custom-cursor {
+        display: block !important; /* Ensure custom cursor is shown */
+    }
+
+    /* Prevent default cursor from appearing on all interactive elements (links, buttons, etc.) */
+    a, button, input, textarea, select, a:hover, button:hover, input:hover, textarea:hover, select:hover,
+    .logo, .logo:hover, img, img:hover {
+        cursor: none !important;
+    }
+}
+
+/* Hide custom cursor on mobile/tablet screens */
+@media screen and (max-width: 1024px) {
+    #custom-cursor {
+        display: none !important;
+    }
+}
+
+
 
 
 /*T*/
@@ -88,6 +129,7 @@ nav li:last-child {
     padding: 10px;
 }
 
+
 a{
     color: var(--secondary-color);
     text-decoration: none;
@@ -96,16 +138,16 @@ a{
 }
 
 a:hover{
+    color: var(--button-text-hover);
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: var(--secondary-color);
+    text-decoration-color: var(--primary-color-3);
 }
 
 nav a:hover{
-    color: var(--secondary-color);
-    text-decoration-color: var(--secondary-color);
+    color: var(--button-text-hover);
+    text-decoration-color: var(--primary-color-3);
 }
-
 .logo{
     color: var(--secondary-color);
     font-size: 2rem;
@@ -246,6 +288,19 @@ section{
     margin-bottom: 1rem;
 }
 
+.cursor {
+    display: inline-block;
+    color: #FFDE59;
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    50% { opacity: 0; }
+}
+.highlight {
+    color: #FFDE59;
+}
+
 .title{
     color: var(--secondary-color);
     font-size: 3rem;
@@ -277,16 +332,19 @@ section{
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    transition: transform 0.4s ease;
 }
 
 .btn-color-1, .btn-color-2{
 
     border: var(--button-border);
     color: var(--secondary-color-2);
+    
 }
 
 .btn-color-1:hover, .btn-color-2:hover{
     cursor: pointer;
+    transform: scale(1.05);
 }
 .btn-color-1, .btn-color-2:hover{
     background: var(--button-background);
@@ -405,31 +463,37 @@ article .icon{
 }
 
 
-#projects{
+#projects {
     position: relative;
 }
 
-.color-container{
-  
+.color-container {
     border-color: var(--container-border);
     background: var(--primary-color-2);
 }
 
-.project-img{
+.project-img {
     border-radius: 2rem;
     width: 90%;
     height: 90%;
 }
 
-.project-title{
+.project-title {
     margin: 1rem;
     color: var(--secondary-color);
 }
 
-.project-btn{
+.project-btn {
     color: var(--secondary-color);
     border-color: var(--container-border);
+    border-radius: 2rem; /* Same rounded corners as the original */
+    transition: transform 0.4s ease; /* Smooth transition effect */
 }
+
+.project-btn:hover {
+    transform: scale(1.05); /* Slightly increase the size of the button */
+}
+
 
 #contact{
     display: flex;
@@ -437,6 +501,11 @@ article .icon{
     flex-direction: column;
     height: 70vh;
 }
+
+/* #contact a:hover{
+    color: var(--button-text-hover);
+    text-decoration-color: var(--button-text-hover);
+} */
 
 .contact-info-upper-container{
   

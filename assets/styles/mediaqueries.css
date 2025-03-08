@@ -1,73 +1,90 @@
 @media screen and (max-width: 1400px) {
-    #profile{
+    #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
 
-    .about-containers{
+    .about-containers {
         flex-wrap: wrap;
     }
-
 }
+
 @media screen and (max-width: 1200px) {
-    #nav-desk{
+    #nav-desk {
         display: none;
     }
 
-    #nav-mobile{
+    #nav-mobile {
         display: flex;
     }
 
-    #experience, .experience-details-container{
+    #experience, .experience-details-container {
         margin-top: 2rem;
     }
 
-    #profile, .section-container{
+    #profile, .section-container {
         display: block;
     }
 
-    .arrow{
+    .arrow {
         display: none;
     }
 
-    section, .section-container{
+    section, .section-container {
         height: fit-content;
     }
 
-    section{
+    section {
         margin: 0 5%;
     }
 
-    .section__pic-container{
+    .section__pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
 
-    .about-containers{
+    .about-containers {
         margin-top: 0;
     }
-
 }
 
+/* Hide custom cursor for all mobile and tablet devices */
+@media screen and (max-width: 1024px) {
+    #custom-cursor {
+        display: none; /* Hides the cursor for all devices below 1024px */
+    }
+}
 
+/* Additional breakpoints to hide the custom cursor on smaller mobile devices (iPhone SE to iPhone 14 Pro Max and all tablets) */
+@media screen and (max-width: 767px) { 
+    #custom-cursor {
+        display: none; /* Ensures custom cursor is hidden on mobile devices */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #custom-cursor {
+        display: none; /* Ensures custom cursor is hidden on very small mobile screens */
+    }
+}
 
 @media screen and (max-width: 600px) {
     #contact,
-    footer{
+    footer {
         height: 40vh;
     }
 
-    #profile{
+    #profile {
         height: 83vh;
         margin-bottom: 0;
     }
 
-    article{
+    article {
         font-size: 1rem;
     }
 
-    footer nav{
+    footer nav {
         height: fit-content;
         margin-bottom: 2rem;
     }
@@ -76,43 +93,43 @@
         flex-wrap: wrap;
     }
 
-    .contact-info-container{
+    .contact-info-container {
         margin: 0;
     }
 
-    .contact-info-container p, .links-nav li a{
+    .contact-info-container p, .links-nav li a {
         font-size: 1rem;
     }
 
-    .experience-sub-title{
+    .experience-sub-title {
         font-size: 1.25rem;
     }
 
-    .logo{
+    .logo {
         font-size: 1.5rem;
     }
 
-    .links-nav{
+    .links-nav {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
 
-    .section__pic-container{
+    .section__pic-container {
         width: auto;
         height: 46vw;
         justify-content: center;
     }
 
-    .section__text__p2{
+    .section__text__p2 {
         font-size: 1.25rem;
     }
 
-    .title{
+    .title {
         font-size: 2rem;
     }
 
-    .text-container{
+    .text-container {
         text-align: justify;
     }
 }
