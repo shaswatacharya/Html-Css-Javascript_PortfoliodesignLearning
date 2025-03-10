@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="description" content="Explore the portfolio of Shaswat Acharya, a skilled Frontend Developer and Designer showcasing web development projects and design expertise.">
+    <meta name="keywords" content="Shaswat Acharya, frontend developer, web developer, portfolio, web development, HTML, CSS, JavaScript, front-end design, UI/UX, web design">
+    <meta name="author" content="Shaswat Acharya">
+    <meta property="og:title" content="Shaswat Acharya - Frontend Developer & Designer">
+    <meta property="og:description" content="Visit the portfolio of Shaswat Acharya, featuring web development projects, design work, and professional skills.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/shaswatacharya/Html-Css-Javascript_PortfoliodesignLearning/main/assets/images/shaswat-acharya-portfolio.png">
+    <meta property="og:image" content="https://raw.githubusercontent.com/shaswatacharya/Html-Css-Javascript_PortfoliodesignLearning/main/assets/images/about-pic.png">
+    <meta property="og:url" content="https://shaswatacharya.com.np">
+
     <title>Shaswat Acharya</title>
     <link rel="shortcut icon" href="./assets/images/tab-icon.png">
     <link rel="stylesheet" href="./assets/styles/style.css">
@@ -12,9 +20,9 @@
 </head>
 <body>
     
-
+<!-- Desktop View Nav -->
     <nav id="nav-desk">
-    <div class="logo">Shaswat Acharya</div>
+    <div class="logo">Shaswat</div>
     <div>
         <ul class="links-nav">
             <li><a href="#about">About</a></li>
@@ -34,8 +42,9 @@
     </div>
     </nav>
 
+    <!-- Mobile View Nav -->
     <nav id="nav-mobile">
-        <div class="logo">Shaswat Acharya</div>
+        <div class="logo">Shaswat</div>
         <div class="mobile-menu">
             <div class="mobile-icon" onclick="toggleMenu()">
                 <span></span>
@@ -64,13 +73,16 @@
 
     </nav>
 
+
+    <!-- Profile/landing page -->
+
     <section id="profile">
         
         <div class="section__pic-container">
-            <img src="./assets/images/profile-pic.png" alt="Shaswat Acharya Profile picture">
+            <img src="./assets/images/shaswat-acharya-portfolio.png" alt="Shaswat Acharya Profile picture">
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
+            <p class="section__text__p1">Hey👋, I'm</p>
             <h1 class="title">Shaswat Acharya</h1>
             <p class="section__text__p2">Frontend <span id="typing-text" class="highlight"></span><span class="cursor">|</span></p>
             <div class="btn-container">
@@ -84,7 +96,18 @@
                 src-dark="./assets/images/github_dark.png" alt="My Github Profile" class="icon github-icon" onclick="location.href='https://github.com/shaswatacharya'">
             </div>
         </div>
+
+
+        <!-- Scroll Down Section -->
+        <div id="scroll-down-container">    
+            <img src="./assets/images/mouse-scroll.svg" src-light="./assets/images/mouse-scroll.svg"
+            src-dark="./assets/images/mouse-scroll_dark.svg" alt="Scroll Mouse Icon" id="scroll-mouse-icon" class="icon">
+        </div>
+
+
     </section>
+
+    <!-- About Section -->
 
     <section id="about">
         
@@ -92,14 +115,14 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets//images/about-pic.png" alt="Profile picture" class="about-pic"/>
+                <img src="./assets//images/about-pic.png" alt="Shaswat Acharya Photo" class="about-pic"/>
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/images/experience.png" src-light="./assets/images/experience.png" src-dark="./assets/images/experience_dark.png" alt="experience icon" class="icon">
                         <h3>Experience</h3>
-                        <p>1 year <br>Frontend Development</p>
+                        <p>1+ year <br>Frontend Development</p>
                     </div>
                     <div class="details-container"> 
                         <img src="./assets/images/education.png" src-light="./assets/images/education.png" src-dark="./assets/images/education_dark.png" alt="education icon" class="icon">
@@ -108,7 +131,7 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Hey, I’m Shaswat—a frontend developer and designer still learning and growing in the field. I enjoy building clean and simple websites that look good and work smoothly. With a mix of design and coding, I’m always experimenting and improving to create better user experiences.</p>
+                    <p>Hi, I'm Shaswat, a frontend developer passionate about creating clean, user-friendly websites. I design smooth UI/UX and code dynamic interfaces to bring ideas to life—always learning and improving!</p>
 
                 </div>
             </div>
@@ -116,6 +139,8 @@
         <img src="./assets/images/arrow.png" src-light="./assets/images/arrow.png" src-dark="./assets/images/arrow_dark.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
 
     </section>
+
+    <!-- Experience Section -->
 
     <section id="experience">
 
@@ -210,6 +235,8 @@
         <img src="./assets/images/arrow.png" src-light="./assets/images/arrow.png" src-dark="./assets/images/arrow_dark.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
+    <!-- Projects Section -->
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -219,7 +246,7 @@
                 <div class="article-container">
                     <img src="./assets/images/multitool.png" alt="Project 1" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">MULTI-Tools Script</h2>
+                <h2 class="experience-sub-title project-title">MULTI-Tools Batch Script</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shaswatacharya/MultiTool'" >Github</button>
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shaswatacharya/MultiTool/archive/refs/heads/main.zip'">Live Demo</button>
@@ -229,7 +256,7 @@
                 <div class="article-container">
                     <img src="./assets/images/Tic-Tac-Toe.svg" alt="Project 2" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Tic_Tac_Toe</h2>
+                <h2 class="experience-sub-title project-title">Interactive Tic-Tac-Toe</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shaswatacharya/Tic_Tac_Toe'">Github</button>
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://shaswatacharya.github.io/Tic_Tac_Toe/'">Live Demo</button>
@@ -239,17 +266,34 @@
                 <div class="article-container">
                     <img src="./assets/images/Javascript Game.svg" alt="Project 3" class="project-img">
                 </div>
-                <h2 class="experience-sub-title project-title">Javascript Game</h2>
+                <h2 class="experience-sub-title project-title">Fun JavaScript Mini-Game</h2>
                 <div class="btn-container">
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shaswatacharya/Javascript_Game'">Github</button>
                     <button class="btn btn-color-2 project-btn" onclick="location.href='https://shaswatacharya.github.io/Javascript_Game/'">Live Demo</button>
                 </div>
             </div>
+
+            <!-- Add the New Projects here -->
+
+            <!-- <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/images/Javascript Game.svg" alt="Project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Fun JS Mini-Game</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/shaswatacharya/Javascript_Game'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://shaswatacharya.github.io/Javascript_Game/'">Live Demo</button>
+                </div>
+            </div> -->
+
+            <!-- add projects ends here -->
         </div>
         </div>
         <img src="./assets/images/arrow.png" src-light="./assets/images/arrow.png" src-dark="./assets/images/arrow_dark.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
     
+    <!-- Contact Section -->
+
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
@@ -266,6 +310,8 @@
         </div>
     </section>
     
+    <!-- Footer -->
+
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -277,12 +323,48 @@
                 </ul>
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Shaswat Acharya. All Rights Reserved.</p>
+        <p>Built with ❤️ by Shaswat | Powered by HTML, CSS, JS</p>
+        <!-- <p>Copyright &#169; 2025 Shaswat Acharya. All Rights Reserved.</p> -->
     </footer>
     
+
+ <!-- Back-to-Top Button -->
+
+<button id="backToTop" class="back-to-top" title="Back To Top">
+    <img src="./assets/images/arrow-up.svg" src-light="./assets/images/arrow-up.svg" src-dark="./assets/images/arrow-up_dark.svg" alt="Back to Top" class="icon">
+</button>
+
+
+
+<!-- for Custom Cursor -->
     <div id="custom-cursor"></div>
+
+<!-- Little Easter Egg Secret(Only works after Uncommenting from Html,css,JS) -->
+
+    <!-- <div id="hacker-overlay" class="hacker-mode-overlay"> -->
+        <!-- Glitching Text -->
+        <!-- <h1 id="access-granted-text">ACCESS GRANTED</h1> -->
+    
+        <!-- Typing Effect (Terminal message) -->
+        <!-- <div id="typing-effect" class="typing-effect"></div> -->
+    
+        <!-- Code Scroll (Fake terminal output) -->
+        <!-- <div class="code-scroll"> -->
+            <!-- <span>Initializing connection...</span> -->
+            <!-- <span>Authenticating...</span>
+            <span>Access Granted</span>
+            <span>Hacker Mode Activated</span> -->
+        <!-- </div> -->
+    
+        <!-- Matrix Rain Effect Canvas -->
+        <!-- <canvas id="matrix-rain" class="matrix-rain"></canvas> -->
+    <!-- </div> -->
+    
+    
+    
+
+    
     <script src="./assets/scripts/script.js"></script>
     
 </body>
 </html>
-
