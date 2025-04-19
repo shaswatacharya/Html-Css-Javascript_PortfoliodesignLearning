@@ -63,7 +63,7 @@ Let’s connect:
 ## 📬 **Feedback / Suggestions**
 
 Found a bug or want to suggest an improvement?  
-Feel free to [open an issue](https://github.com/shaswatacharya/your-repo-name/issues) or reach out via [LinkedIn](https://www.linkedin.com/in/shaswatacharya).
+Feel free to [open an issue](https://github.com/shaswatacharya/Html-Css-Javascript_PortfoliodesignLearning/issues) or reach out via [LinkedIn](https://www.linkedin.com/in/shaswatacharya).
 
 ---
 
